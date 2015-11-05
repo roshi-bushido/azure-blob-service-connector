@@ -1,0 +1,3 @@
+<!-- BEGIN_INCLUDE(azure-blob-service:download-blob) -->
+    <azure-blob-service:download-blob config-ref="" container="#[map-payload:container]" fileName="#[map-payload:fileName]" />
+<!-- END_INCLUDE(azure-blob-service:download-blob) -->
