@@ -67,6 +67,8 @@
         <modeSwitch alwaysCombo="true" name="Azure-blob-service operations to execute" caption="Operation" description="Operation.">
           <no-operation abstractElement="http://www.mulesoft.org/schema/mule/azure-blob-service/abstractAzure-blob-serviceConnectorGeneric" versions="[3.5.0,8.0.0]" connector-name="processor"></no-operation>
           <mode modeId="http://www.mulesoft.org/schema/mule/azure-blob-service/download-blob" modeLabel="Download blob"></mode>
+          <mode modeId="http://www.mulesoft.org/schema/mule/azure-blob-service/upload-blob" modeLabel="Upload blob"></mode>
+          <mode modeId="http://www.mulesoft.org/schema/mule/azure-blob-service/upload-blob-from-path" modeLabel="Upload blob from path"></mode>
         </modeSwitch>
       </group>
     </attribute-category>
@@ -76,6 +78,24 @@
       <group id="general" caption="General">
         <string name="container" caption="Container" description="" required="true" javaType="java.lang.String"></string>
         <string name="fileName" caption="File Name" description="" required="true" javaType="java.lang.String"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" caption="Upload Blob" icon="icons/small/azure-blob-service-connector-24x16.png" localId="upload-blob" image="icons/large/azure-blob-service-connector-48x32.png" abstract="true" extends="http://www.mulesoft.org/schema/mule/azure-blob-service/abstractAzure-blob-serviceConnectorGeneric" metaData="static">
+    <attribute-category caption="General" description="General.">
+      <group id="general" caption="General">
+        <string name="container" caption="Container" description="" required="true" javaType="java.lang.String"></string>
+        <string name="fileName" caption="File Name" description="" required="true" javaType="java.lang.String"></string>
+        <string name="fileStream-ref" caption="File Stream Reference" description="" required="true" javaType="java.io.InputStream"></string>
+      </group>
+    </attribute-category>
+  </cloud-connector>
+  <cloud-connector returnType="void" caption="Upload Blob From Path" icon="icons/small/azure-blob-service-connector-24x16.png" localId="upload-blob-from-path" image="icons/large/azure-blob-service-connector-48x32.png" abstract="true" extends="http://www.mulesoft.org/schema/mule/azure-blob-service/abstractAzure-blob-serviceConnectorGeneric" metaData="static">
+    <attribute-category caption="General" description="General.">
+      <group id="general" caption="General">
+        <string name="container" caption="Container" description="" required="true" javaType="java.lang.String"></string>
+        <string name="fileName" caption="File Name" description="" required="true" javaType="java.lang.String"></string>
+        <string name="path" caption="Path" description="" required="true" javaType="java.lang.String"></string>
       </group>
     </attribute-category>
   </cloud-connector>

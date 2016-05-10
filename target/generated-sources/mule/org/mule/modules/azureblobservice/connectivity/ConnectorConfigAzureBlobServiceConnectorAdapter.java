@@ -8,7 +8,7 @@ import org.mule.devkit.internal.connection.management.TestableConnection;
 import org.mule.modules.azureblobservice.config.ConnectorConfig;
 
 @SuppressWarnings("all")
-@Generated(value = "Mule DevKit Version 3.7.1", date = "2015-10-28T06:31:11-07:00", comments = "Build UNNAMED.2613.77421cc")
+@Generated(value = "Mule DevKit Version 3.7.1", date = "2016-05-09T07:18:00-03:00", comments = "Build UNNAMED.2613.77421cc")
 public class ConnectorConfigAzureBlobServiceConnectorAdapter
     extends ConnectorConfig
     implements ConnectionManagementConnectionAdapter<ConnectorConfig, ConnectionManagementConfigAzureBlobServiceConnectorConnectionKey> , TestableConnection<ConnectionManagementConfigAzureBlobServiceConnectorConnectionKey>

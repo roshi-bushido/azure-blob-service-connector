@@ -14,7 +14,7 @@ import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
  * 
  */
 @SuppressWarnings("all")
-@Generated(value = "Mule DevKit Version 3.7.1", date = "2015-10-28T06:31:11-07:00", comments = "Build UNNAMED.2613.77421cc")
+@Generated(value = "Mule DevKit Version 3.7.1", date = "2016-05-09T07:18:00-03:00", comments = "Build UNNAMED.2613.77421cc")
 public class AzureBlobServiceNamespaceHandler
     extends NamespaceHandlerSupport
 {
@@ -47,6 +47,16 @@ public class AzureBlobServiceNamespaceHandler
             this.registerBeanDefinitionParser("download-blob", new DownloadBlobDefinitionParser());
         } catch (NoClassDefFoundError ex) {
             handleException("download-blob", "@Processor", ex);
+        }
+        try {
+            this.registerBeanDefinitionParser("upload-blob", new UploadBlobDefinitionParser());
+        } catch (NoClassDefFoundError ex) {
+            handleException("upload-blob", "@Processor", ex);
+        }
+        try {
+            this.registerBeanDefinitionParser("upload-blob-from-path", new UploadBlobFromPathDefinitionParser());
+        } catch (NoClassDefFoundError ex) {
+            handleException("upload-blob-from-path", "@Processor", ex);
         }
     }
 

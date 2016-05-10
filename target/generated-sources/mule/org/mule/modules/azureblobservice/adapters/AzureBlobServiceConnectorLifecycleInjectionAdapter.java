@@ -23,7 +23,7 @@ import org.slf4j.LoggerFactory;
  * 
  */
 @SuppressWarnings("all")
-@Generated(value = "Mule DevKit Version 3.7.1", date = "2015-10-28T06:31:11-07:00", comments = "Build UNNAMED.2613.77421cc")
+@Generated(value = "Mule DevKit Version 3.7.1", date = "2016-05-09T07:18:00-03:00", comments = "Build UNNAMED.2613.77421cc")
 public class AzureBlobServiceConnectorLifecycleInjectionAdapter
     extends AzureBlobServiceConnectorMetadataAdapter
     implements MuleContextAware, Disposable, Initialisable, Startable, Stoppable

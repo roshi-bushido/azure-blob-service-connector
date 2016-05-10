@@ -27,7 +27,7 @@ public class ConnectorConfig {
     @Connect
     @TestConnectivity
     public void connect(@ConnectionKey String username, @Password String password) throws ConnectionException {
-    	String connectionString = String.format("DefaultEndpointsProtocol=http;AccountName=%s;AccountKey=%s", username, password);
+    	String connectionString = String.format("DefaultEndpointsProtocol=https;AccountName=%s;AccountKey=%s", username, password);
         try {
             CloudStorageAccount account = CloudStorageAccount.parse(connectionString);
             this.serviceClient = account.createCloudBlobClient();

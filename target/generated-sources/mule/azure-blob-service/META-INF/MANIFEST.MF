@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Azure Blob Service
 Bundle-SymbolicName: org.mule.tooling.ui.contribution.azure-blob-service.3.5.0;singleton:=true
-Bundle-Version: 1.0.0.201510280631
+Bundle-Version: 1.0.0.201605091918
 Bundle-Activator: org.mule.tooling.ui.contribution.AzureBlobServiceActivator
 Bundle-Vendor: 
 Require-Bundle: org.eclipse.ui,
